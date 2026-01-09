@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projekt Website</title>
+  <meta name="description" content="Kurzbeschreibung deines Projekts in einem Satz." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-950 text-zinc-100">
+  <header class="max-w-5xl mx-auto px-6 py-10">
+    <div class="flex items-center justify-between">
+      <div class="text-lg font-semibold">Dein Logo/Name</div>
+      <nav class="flex gap-6 text-sm text-zinc-300">
+        <a href="#projekt" class="hover:text-white">Projekt</a>
+        <a href="#helfen" class="hover:text-white">Helfen</a>
+        <a href="#kontakt" class="hover:text-white">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6">
+    <section class="py-16">
+      <p class="text-zinc-300 text-sm mb-4">Kurzer Tagline-Satz</p>
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+        Eine klare Headline, die sofort erklärt, worum es geht.
+      </h1>
+      <p class="text-zinc-300 mt-6 text-lg max-w-2xl">
+        2–3 Sätze. Was ist das Projekt, warum ist es wichtig, was passiert als Nächstes.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <a href="#helfen" class="inline-flex justify-center rounded-xl bg-white text-zinc-900 px-5 py-3 font-semibold hover:bg-zinc-200">
+          Jetzt helfen
+        </a>
+        <a href="#projekt" class="inline-flex justify-center rounded-xl border border-zinc-700 px-5 py-3 font-semibold hover:border-zinc-500">
+          Mehr erfahren
+        </a>
+      </div>
+    </section>
+
+    <section id="projekt" class="py-14 border-t border-zinc-800">
+      <h2 class="text-2xl font-bold">Worum es geht</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <div class="rounded-2xl border border-zinc-800 p-6 bg-zinc-900/40">
+          <h3 class="font-semibold">Problem</h3>
+          <p class="text-zinc-300 mt-2 text-sm">Was ist gerade kaputt / fehlt / dringend?</p>
+        </div>
+        <div class="rounded-2xl border border-zinc-800 p-6 bg-zinc-900/40">
+          <h3 class="font-semibold">Lösung</h3>
+          <p class="text-zinc-300 mt-2 text-sm">Was baut ihr konkret? Was ändert sich dadurch?</p>
+        </div>
+        <div class="rounded-2xl border border-zinc-800 p-6 bg-zinc-900/40">
+          <h3 class="font-semibold">Impact</h3>
+          <p class="text-zinc-300 mt-2 text-sm">Für wen, wie viele, ab wann, messbar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="helfen" class="py-14 border-t border-zinc-800">
+      <h2 class="text-2xl font-bold">So kannst du helfen</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-4">
+        <div class="rounded-2xl border border-zinc-800 p-6 bg-zinc-900/40">
+          <h3 class="font-semibold">Spenden</h3>
+          <p class="text-zinc-300 mt-2 text-sm">
+            Kurz erklären, wofür das Geld genutzt wird.
+          </p>
+          <div class="mt-4 text-sm text-zinc-300">
+            <div>PayPal/Bank/Link: <span class="text-white font-semibold">HIER EINTRAGEN</span></div>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-zinc-800 p-6 bg-zinc-900/40">
+          <h3 class="font-semibold">Mitmachen</h3>
+          <p class="text-zinc-300 mt-2 text-sm">
+            Volunteer, Skills, Sachspenden, Kontakte. Kurz und klar.
+          </p>
+          <div class="mt-4 text-sm text-zinc-300">
+            <div>E-Mail: <span class="text-white font-semibold">HIER EINTRAGEN</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="py-14 border-t border-zinc-800">
+      <h2 class="text-2xl font-bold">Kontakt</h2>
+      <p class="text-zinc-300 mt-3 max-w-2xl">
+        Ein Satz. Dann deine Kontaktoptionen.
+      </p>
+      <div class="mt-6 rounded-2xl border border-zinc-800 p-6 bg-zinc-900/40">
+        <div class="grid sm:grid-cols-2 gap-4 text-sm">
+          <div>
+            <div class="text-zinc-400">E-Mail</div>
+            <div class="font-semibold">dein@email.com</div>
+          </div>
+          <div>
+            <div class="text-zinc-400">WhatsApp</div>
+            <div class="font-semibold">+XX XXX XXX</div>
+          </div>
+          <div>
+            <div class="text-zinc-400">Ort</div>
+            <div class="font-semibold">Stadt, Land</div>
+          </div>
+          <div>
+            <div class="text-zinc-400">Social</div>
+            <div class="font-semibold">@deinaccount</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-10 border-t border-zinc-800 text-zinc-400 text-sm">
+      © <span id="year"></span> Dein Projekt. Alle Rechte vorbehalten.
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
